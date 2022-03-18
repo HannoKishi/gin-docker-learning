@@ -1,0 +1,20 @@
+version: "3.7"
+
+services:
+  app:
+    build: ./
+    ports:
+      - 8082:8081
+    volumes:
+      - ./:/app
+    environment:
+      - TZ=Asia/Shanghai
+  redis:
+    image: redis:latest
+    volumes:
+      - redis:/data
+    environment:
+      - TZ=Asia/Shanghai
+
+volumes:
+  redis:
