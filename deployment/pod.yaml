@@ -1,0 +1,9 @@
+apiVersion: v1 #指定api版本，此值必须在kubectl apiversion中
+kind: Pod #指定创建资源的角色/类型
+metadata: #资源的元数据/属性
+  name: test-k8s #资源的名字，在同一个namespace中必须唯一
+spec:
+  # 定义容器，可以多个
+  containers:
+    - name: test-k8s # 容器名字
+      image: ccr.ccs.tencentyun.com/hannokishi/k8s-test:v2 # 镜像地址
