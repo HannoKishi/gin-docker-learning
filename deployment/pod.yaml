@@ -6,4 +6,4 @@ spec:
   # 定义容器，可以多个
   containers:
     - name: test-k8s # 容器名字
-      image: ccr.ccs.tencentyun.com/hannokishi/k8s-test:v2 # 镜像地址
+      image: ccr.ccs.tencentyun.com/hannokishi/k8s-test:v3 # 镜像地址

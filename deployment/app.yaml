@@ -22,4 +22,4 @@ spec:
         # 容器名字
         - name: test-k8s
           # 镜像路径
-          image: ccr.ccs.tencentyun.com/hannokishi/k8s-test:v2
+          image: ccr.ccs.tencentyun.com/hannokishi/k8s-test:v3
